@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import './App.css';
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home"
+import Questions from "./pages/Questions"
 import { Route, Routes } from "react-router-dom"
 
 
@@ -13,8 +14,8 @@ class App extends Component {
           <div>
             <Routes>
               <Route path="/" element={<Home />} />
-              {/* <Route path="/questions" element={<Questions />} />
-              <Route path="/articles" element={<Articles />} />
+              <Route path="/questions" element={<Questions />} />
+              {/*<Route path="/articles" element={<Articles />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/signup" element={<SignUp />} />
               <Route path="/questions/:id/edit" element={<QuestionEdit />} />
