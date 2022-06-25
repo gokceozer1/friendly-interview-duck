@@ -3,7 +3,7 @@ import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 
 const navigation = [
-    { name: 'Home', href: '#' },
+    { name: 'Home', href: '/' },
     { name: 'Questions', href: 'questions' },
     { name: 'Articles', href: '#' },
     { name: 'Contact', href: '#' },
@@ -18,7 +18,7 @@ export default function NavBar() {
               <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
                 <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
                   <div className="flex items-center justify-between w-full md:w-auto">
-                    <a href="#">
+                    <a href="/">
                       <span className="sr-only">Workflow</span>
                       <img
                         alt="Workflow"
