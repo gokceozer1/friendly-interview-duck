@@ -36,7 +36,7 @@ export default function Article(props){
                 style={{ textDecoration: 'none' }}
             >
                 <h2 className="break-after-column text-blue-900">{article.headline}<br /><br /></h2>
-                <p className="question-answer line-clamp-5">{article.text}</p>
+                <p className="question-answer">{article.text}</p>
             </div>
 
                 </div>

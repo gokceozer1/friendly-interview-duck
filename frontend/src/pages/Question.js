@@ -36,7 +36,7 @@ export default function Question(props){
                 style={{ textDecoration: 'none' }}
             >
                 <h2 className="break-after-column text-blue-900">{question.company + " | " + question.question}<br /><br /></h2>
-                <p className="question-answer line-clamp-5">{question.answer}</p>
+                <p className="question-answer">{question.answer}</p>
             </div>
 
                 {question.articles?.map((article, question_index) => (
