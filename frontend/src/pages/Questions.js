@@ -25,11 +25,6 @@ export default function Questions() {
       });
   };
 
-  const handleQuestionClick = (e) =>{ 
-    let path = "/questions/" + e.id; 
-    navigate(path);
-  }
-
   const onChangeSearchTitle = e => {
     const searchTitle = e.target.value;
     if (searchTitle !== '') {
@@ -68,7 +63,11 @@ export default function Questions() {
                 <Link
                     className={`todo-title mr-2`}
                     title={question.question}
-                    to = {`/questions/${question.id}`}
+                    to = {{
+                      pathname:`${question.id}`, 
+                      query: {id: question.id }}
+                    }
+                    
                     style={{ textDecoration: 'none' }}
                 >
                     <h2 className="break-after-column text-blue-900">{question.company + " | " + question.question}<br /><br /></h2>
