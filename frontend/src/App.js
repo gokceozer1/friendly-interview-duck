@@ -3,6 +3,8 @@ import './App.css';
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home"
 import Questions from "./pages/Questions"
+import Articles from "./pages/Articles"
+import Contact from "./pages/Contact"
 import { Route, Routes } from "react-router-dom"
 
 
@@ -15,9 +17,9 @@ class App extends Component {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/questions" element={<Questions />} />
-              {/*<Route path="/articles" element={<Articles />} />
+              <Route path="/articles" element={<Articles />} />
               <Route path="/contact" element={<Contact />} />
-              <Route path="/signup" element={<SignUp />} />
+              {/* <Route path="/signup" element={<SignUp />} />
               <Route path="/questions/:id/edit" element={<QuestionEdit />} />
               <Route path="/questions/:id" element={<Question />} />
               <Route path="/articles/:id" element={<Article />} />

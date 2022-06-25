@@ -25,24 +25,10 @@ export default function Questions() {
       });
   };
 
-  const retrieveArticleHeader = (e) => {
-    QuestionService.get()
-      .then(response => {
-        
-      })
-      .catch(e => {
-        console.log(e);
-      });
-  };
-
   const handleQuestionClick = (e) =>{ 
     let path = "/questions/" + e.id; 
     navigate(path);
   }
-
-  const handleDropdownChange = (event) => {
-    setDropDownValue(event.target.value);
-  };
 
   const onChangeSearchTitle = e => {
     const searchTitle = e.target.value;
