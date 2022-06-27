@@ -74,6 +74,7 @@ export default function Questions() {
                     <p className="question-answer line-clamp-5">{question.answer}</p>
                 </Link>
                 
+                <h2 className="badge text-blue-700">Articles: <br/></h2>
                 {question.articles.map((article, question_index) => (
                 <div key = {article.id}
                 className="list"      >
