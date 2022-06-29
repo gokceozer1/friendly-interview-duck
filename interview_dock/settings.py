@@ -25,12 +25,14 @@ SECRET_KEY = 'django-insecure-rd1bzfraaq1b0gb25$x@k0cj5l!!(89f!3&=!-o7&w)qo5plqu
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+CORS_ORIGIN_ALLOW_ALL = True
+ALLOWED_HOSTS = ['*']
 
-CORS_ALLOWED_ORIGINS = [
-    'http://localhost:8000',
-    'http://localhost:3000',
-]
+# CORS_ALLOWED_ORIGINS = [
+#     'https://friendly-interview-duck.herokuapp.com', 'https://127.0.0.1:8000.com', 'https://localhost.com'
+# ]
+
+# ALLOWED_HOSTS = ['https://friendly-interview-duck.herokuapp.com', 'https://127.0.0.1:8000.com', 'https://localhost.com']
 
 
 # Application definition
