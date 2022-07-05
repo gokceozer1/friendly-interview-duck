@@ -53,7 +53,7 @@ export default function Questions() {
                 </div>
             </div>
         </form>
-        <ul className="grid grid-rows-3 grid-flow-col gap-4 mt-4 px-10">
+        <ul className="grid grid-rows-3 grid-cols-3 gap-4 mt-4 px-10">
             {filteredResults.map((question, index) => (
                 <li
                 key={question.id}

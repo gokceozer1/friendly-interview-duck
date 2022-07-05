@@ -53,7 +53,7 @@ export default function Articles() {
                 <input onChange={onChangeSearchTitle} type="search" id="default-search" className="block p-4 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search by headline" required/>
             </div>
         </form>
-        <ul className="grid grid-rows-3 grid-flow-col gap-4 mt-4 px-10">
+        <ul className="grid grid-rows-3 grid-cols-3 gap-4 mt-4 px-10">
             {filteredResults.map((article, index) => (
                 <li
                 key={article.id}
