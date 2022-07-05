@@ -59,7 +59,9 @@ export default function Articles() {
                 key={article.id}
                 className="shadow-lg bg-blue-100 text-blue-500 text-lg font-bold text-center p-10 rounded-lg row-span-3 col-span-1"                
                 >
-                
+                <a className = "mt-4 px-10" href={`/articles/${article.id}`}>
+                  <img className="rounded-t-lg" src={article.image} alt="" />
+                </a>
                 <Link
                     className={`todo-title mr-2`}
                     title={article.headline}
