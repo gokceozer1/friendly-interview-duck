@@ -53,7 +53,7 @@ export default function Questions() {
                 </div>
             </div>
         </form>
-        <ul className="grid grid-rows-3 grid-cols-3 gap-4 mt-4 px-10">
+        <ul className="grid grid-rows-3 grid-cols-3 gap-4 my-5 px-10">
             {filteredResults.map((question, index) => (
                 <li
                 key={question.id}
@@ -71,10 +71,13 @@ export default function Questions() {
                     style={{ textDecoration: 'none' }}
                 >
                     <h2 className="break-after-column text-blue-900">{question.company + " | " + question.question}<br /><br /></h2>
-                    <p className="question-answer line-clamp-5">{question.answer}</p>
+                    <p className="question-answer line-clamp-5">{question.answer}<br /><br /></p>
+                    
                 </Link>
                 
                 {question.articles.map((article, question_index) => (
+                <>
+                <p className="question-answer text-blue-700 line-clamp-5"><br /><br />Related Articles:</p>
                 <div key = {article.id}
                 className="list"      >
                     <Link
@@ -87,6 +90,7 @@ export default function Questions() {
                     </Link>
                 
                 </div>
+                </>
                 ))}
 
                 </li>
