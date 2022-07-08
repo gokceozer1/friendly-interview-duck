@@ -20,11 +20,7 @@ export default function NavBar() {
                   <div className="flex items-center justify-between w-full md:w-auto">
                     <a href="/">
                       <span className="sr-only">Workflow</span>
-                      <img
-                        alt="Workflow"
-                        className="h-8 w-auto sm:h-10"
-                        src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                      />
+                      <i class="fa-solid fa-anchor fa-2xl text-indigo-600"></i>
                     </a>
                     <div className="-mr-2 flex items-center md:hidden">
                       <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -35,7 +31,7 @@ export default function NavBar() {
                   </div>
                 </div>
                 <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
-                  {navigation.map((item) => (
+                  {navigation.map((item, index) => (
                     <a key={item.name} href={item.href} className="font-medium text-gray-500 hover:text-gray-900">
                       {item.name}
                     </a>
@@ -77,7 +73,7 @@ export default function NavBar() {
                     </div>
                   </div>
                   <div className="px-2 pt-2 pb-3 space-y-1">
-                    {navigation.map((item) => (
+                    {navigation.map((item, index) => (
                       <a
                         key={item.name}
                         href={item.href}
